@@ -1,0 +1,6 @@
+compile the library with mingw
+------------------------------
+
+gcc -Wall -c -DBUILD_DLL libpm600x.c
+gcc -Wall -shared -o libpm600x.dll libpm600x.o ftd2xx.lib -Wl,--out-implib,libpm600x.a,--add-stdcall-alias
+
